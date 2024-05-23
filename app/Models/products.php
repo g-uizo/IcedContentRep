@@ -45,3 +45,4 @@ public function setCategory(string $category) {
 public function getPrice(float $price) {
     $this->price = $price;
 }
+}
