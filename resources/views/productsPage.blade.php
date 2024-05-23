@@ -1,1 +1,5 @@
-<h3>não faço sexoo, eu fodo forte </h3>
+@extends('layouts.app')
+
+@section('content')
+   <h1>Página Produtos</h1>
+@endsection

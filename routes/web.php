@@ -11,3 +11,5 @@ Route::get('/pagina-Inicial',[\App\Http\Controllers\landingController::class,'re
 Route::get('/home',[\App\Http\Controllers\landingController::class,'redirect']);
 Route::get('/nosso-Produtos',[\App\Http\Controllers\productsController::class, 'productsPage'])->name('site.products');
 Route::get('/produtos',[\App\Http\Controllers\productsController::class,'redirect']);
+Route::get('/sobreNos',[\App\Http\Controllers\sobreController::class, 'sobrePage'])->name('site.sobre');
+Route::get('/sobre',[\App\Http\Controllers\sobreController::class,'redirect']);
