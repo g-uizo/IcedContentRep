@@ -5,7 +5,8 @@
   </a>
   <ul class="flex flex-row space-x-10">
     <li><a class="font-semibold" href="/nosso-Produtos">Nossos Produtos</a></li>
-    <li><a class="font-semibold" href="">Sobre</a></li>
-    <li><a class="font-semibold" href=""><span class="icon-[solar--bag-linear]"></span></a></li>
+    <li><a class="font-semibold" href="/sobreNos">Sobre</a></li>
+
+    <li><a class="font-semibold" href="/contato?">Contato</a></li>
   </ul>
 </nav>

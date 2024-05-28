@@ -13,3 +13,5 @@ Route::get('/nosso-Produtos',[\App\Http\Controllers\productsController::class, '
 Route::get('/produtos',[\App\Http\Controllers\productsController::class,'redirect']);
 Route::get('/sobreNos',[\App\Http\Controllers\sobreController::class, 'sobrePage'])->name('site.sobre');
 Route::get('/sobre',[\App\Http\Controllers\sobreController::class,'redirect']);
+Route::get('/contato',[\App\Http\Controllers\contatoController::class, 'contatoPage'])->name('site.contato');
+Route::get('/Contato',[\App\Http\Controllers\contatoController::class,'redirect']);

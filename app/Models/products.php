@@ -42,7 +42,19 @@ public function setCategory(string $category) {
     $this->category = $category;
 }
 
-public function getPrice(float $price) {
+ public function getPrice(): float {
+        return $this->price;
+    }
+
+public function setPrice(float $price) {
     $this->price = $price;
+}
+
+public function getProductImage(): string {
+    return $this->product_image;
+}
+
+public function setProductImage(string $product_image) {
+    $this->product_image = $product_image;
 }
 }

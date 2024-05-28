@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('bag', function (Blueprint $table) {
             $table->unsignedBigInteger('products_id');
-            $table->foreign('products_id')->references('id')->on('products'); //do produto chave estrangeira
+            $table->foreign('products_id')->references('id')->on('produto'); //do produto chave estrangeira
             $table->float('price', 6,2)->nullable();
             $table->integer('selected products')->default(0);
             $table->string('images');
