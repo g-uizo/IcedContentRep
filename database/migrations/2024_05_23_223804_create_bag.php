@@ -14,11 +14,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bag', function (Blueprint $table) {
-            $table->unsignedBigInteger('products_id');
-            $table->foreign('products_id')->references('id')->on('produto'); //do produto chave estrangeira
-            $table->float('price', 6,2)->nullable();
-            $table->integer('selected products')->default(0);
-            $table->string('images');
+            $table->id();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade'); //do usuario chave estrangeira
+            $table->foreign('products_id')->references('id')->on('products')->onDelete('cascade'); //do usuario chave estrangeira
             $table->timestamps();
         });
     }
