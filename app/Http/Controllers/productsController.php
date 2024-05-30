@@ -22,10 +22,8 @@ class productsController extends Controller
             'price' => 'required|numeric|min:0',
             'product_image' => 'required|string|max:255',
         ]);
-        $products = Produto::create($validatedData);
-        return  response()->json([
-            'message' => 'Produto criado e postado com sucesso',
-            'data' => $products
-        ], 201);
+        Produto::create($validatedData);
+
+        return redirect()->route('site.products')->with('success', 'Produto adicionado com sucesso!');
     }
-}
+    }
