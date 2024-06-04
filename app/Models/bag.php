@@ -5,14 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class products extends Model
+class bag extends Model
 {
-
     protected $fillable = [ 
-    'name',
-    'description',
-    'category',
-    'price',
-    'product_image',];
+        'user_id',
+        'products_id',
+    ];
+    
 
+ 
 }
