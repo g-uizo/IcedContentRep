@@ -10,6 +10,7 @@ export default {
         colors: {
             main: "#4AD5F3",
             texto: "#545454",
+            bgClaro: "#B5DBFF",
         },
         extend: {},
     },
