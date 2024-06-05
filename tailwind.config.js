@@ -9,6 +9,7 @@ export default {
     theme: {
         colors: {
             main: "#4AD5F3",
+            texto: "#545454",
         },
         extend: {},
     },
