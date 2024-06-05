@@ -9,7 +9,9 @@
          <p class="text-texto text-lg font-medium">Conheça nosso renomado cardápio de sorvetes em massa.</p>
       </div>
     </div>
+    <div class="p-5">
     <x-card-produto />
+    </div>
 
    </section>
 

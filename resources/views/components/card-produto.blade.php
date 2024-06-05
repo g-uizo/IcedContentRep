@@ -5,10 +5,10 @@
     </div>
     
     
-    <div class="flex flex-col gap-2">
-    <p class="font-bold text-lg">Chocolate italiano</p>
-    <p class="font-normal text-lg">R$15,00</p>
-    <button class="py-3 px-6 bg-main rounded-lg">Adicionar</button> 
+    <div class="flex flex-col gap-6">
+    <p class="font-bold text-2xl">Chocolate italiano</p>
+    <p class="font-normal text-xl">R$15,00</p>
+    <button class="py-3 px-6 text-2xl bg-main rounded-lg flex items-center justify-center gap-4">Adicionar <ion-icon name="bag-outline" size="large"></ion-icon></button> 
     </div>
     </div>
     
