@@ -8,7 +8,7 @@ Route::get('/', function () {
 
 Route::get('/', [\App\Http\Controllers\landingController::class, 'landingPage'])->name('site.landing');
 Route::get('/pagina-Inicial',[\App\Http\Controllers\landingController::class,'redirect']);
-Route::get('/home',[\App\Http\Controllers\landingController::class,'redirect']);
+//Route::get('/home',[\App\Http\Controllers\landingController::class,'redirect']);
 
 Route::get('/nosso-Produtos',[\App\Http\Controllers\productsController::class, 'productsPage'])->name('site.products');
 Route::post('/posta-Produtos',[\App\Http\Controllers\productsController::class, 'postProducts'])->name('site.postProducts');
@@ -21,3 +21,6 @@ Route::get('/contato',[\App\Http\Controllers\contatoController::class, 'contatoP
 Route::get('/Contato',[\App\Http\Controllers\contatoController::class,'redirect']);
 
 Route::fallback([\App\Http\Controllers\fallbackController::class, 'fallback']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
