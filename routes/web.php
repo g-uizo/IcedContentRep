@@ -20,6 +20,9 @@ Route::get('/sobre',[\App\Http\Controllers\sobreController::class,'redirect']);
 Route::get('/contato',[\App\Http\Controllers\contatoController::class, 'contatoPage'])->name('site.contato');
 Route::get('/Contato',[\App\Http\Controllers\contatoController::class,'redirect']);
 
+Route::get('/sacola',[\App\Http\Controllers\bagController::class,'bagPage'])->name('site.sacola');
+
+
 //Route::get('/login',[\App\Http\Controllers\Auth\LoginController::class,''])->middleware('auth');
 
 Route::fallback([\App\Http\Controllers\fallbackController::class, 'fallback']);
