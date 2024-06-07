@@ -19,7 +19,7 @@
     <p class="text-md text-texto">{{ $product->description }}</p>
     <p class="font-normal text-xl">Preço: R$ {{ $product->price }}</p>
     <p class="font">{{ $product->category }}</p>
-     
+    x 
     </div>
     </div>
     
