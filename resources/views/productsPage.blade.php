@@ -10,7 +10,10 @@
       </div>
     </div>
     <div class="p-5">
-    <x-card-produto />
+    @foreach ($products as $product )
+    <x-card-produto :product="$product"/>
+    @endforeach
+    
     </div>
 
    </section>
